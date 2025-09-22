@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int angka[] = {4, 8, 19, 3, 22, 11, 2, 17, 31, 10};
+    int n = sizeof(angka) / sizeof(angka[0]);
+    int i, j, temp;
+
+    // Bubble sort
+    for (i = 0; i < n - 1; i++) {
+        for (j = 0; j < n - i - 1; j++) {
+            if (angka[j] > angka[j + 1]) {
+                temp = angka[j];
+                angka[j] = angka[j + 1];
+                angka[j + 1] = temp;
+            }
+        }
+    }
+
+    printf("Angka setelah diurutkan: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", angka[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
