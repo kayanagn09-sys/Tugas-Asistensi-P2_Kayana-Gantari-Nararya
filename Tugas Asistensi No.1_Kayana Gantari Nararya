@@ -3,7 +3,7 @@
 int main() {
     int a, b;
     
-    printf("=== Kalkulator Sederhana ===\n");
+    printf("Kalkulator Sederhana\n");
     printf("Masukkan angka pertama: ");
     scanf("%d", &a);
     printf("Masukkan angka kedua: ");
