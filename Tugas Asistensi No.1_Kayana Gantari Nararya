@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    
+    printf("=== Kalkulator Sederhana ===\n");
+    printf("Masukkan angka pertama: ");
+    scanf("%d", &a);
+    printf("Masukkan angka kedua: ");
+    scanf("%d", &b);
+
+    printf("Tambah  : %d\n", a + b);
+    printf("Kurang  : %d\n", a - b);
+    printf("Kali    : %d\n", a * b);
+
+    if (b != 0) {
+        printf("Bagi    : %.2f\n", (float)a / b);
+        printf("Modulo  : %d\n", a % b);
+    } else {
+        printf("Bagi    : Error (pembagian dengan nol)\n");
+        printf("Modulo  : Error (modulo dengan nol)\n");
+    }
+
+    return 0;
+}
